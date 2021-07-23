@@ -21,7 +21,17 @@ export default class CarsController {
 
   }
 
-  async createCar() {
+  async createCar(e) {
+    e.preventDefault();
+    let form = e.target
+    let data = {
+      make: form.make.value,
+      model: form.model.value,
+      imgUrl: form.imgUrl.value,
+      year: form.year.value,
+      price: form.price.value,
+      description: form.description.value
+    }
 
   }
 
