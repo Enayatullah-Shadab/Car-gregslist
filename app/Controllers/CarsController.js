@@ -16,6 +16,7 @@ function _drawCars() {
 export default class CarsController {
   constructor() {
     ProxyState.on('cars', _drawCars)
+    carsService.getCars()
 
 
   }
